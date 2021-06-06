@@ -1,3 +1,4 @@
+package domain;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -11,7 +12,7 @@ public class Account {
     private int previousTransactionAmount;
     Map<String, Authentication> authentication = new HashMap<>();
 
-    Account(String accountNumber, String customerName){
+    public Account(String accountNumber, String customerName){
         this.accountNumber = accountNumber;
         this.customerName = customerName;
     }

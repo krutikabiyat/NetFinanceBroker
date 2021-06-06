@@ -1,6 +1,11 @@
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.util.Scanner;
+
+import dao.AccountsRepository;
+import domain.Account;
+import operations.NetFinOperations;
 
 /**
  * @author Krutika Mohanty
@@ -19,7 +24,7 @@ public class Dashboard {
         /**
          * Print Banner
          */
-        try (BufferedReader br = new BufferedReader(new FileReader("banner.txt"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader("resources/banner.txt"))) {
             String line;
             while ((line = br.readLine()) != null) {
                 System.out.println(line);

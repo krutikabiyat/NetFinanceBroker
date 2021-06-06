@@ -1,3 +1,4 @@
+package domain;
 /**
  * @author Krutika Mohanty
  * Authentication module for NetFin
@@ -6,7 +7,7 @@ public class Authentication {
     private String user;
     private String password;
 
-    Authentication(String user, String password){
+    public Authentication(String user, String password){
         this.user = user;
         this.password = password;
     }
